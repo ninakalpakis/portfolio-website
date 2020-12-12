@@ -89,10 +89,15 @@ textarea {
 
 @import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,400&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+
 @font-face {
-  font-family: Salome;
-  src: url('../fonts/salome.otf') format('opentype');
+  font-family: 'salome-regular';
+  src: url('salome-webfont.woff2') format('woff2'),
+       url('salome-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
   font-family: Viksi Script;
   src: url('../fonts/viksi-script.otf') format('opentype');
@@ -156,7 +161,7 @@ header h4 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  font-family: 'Salome';
+  font-family: 'salome-regular';
   text-transform: uppercase;
   color: #edddd4;
   margin: 10px;
@@ -421,7 +426,7 @@ input[type=button] {
 #portfolio h3 {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 1.75em;
+  font-size: 1.5em;
   color: #edddd4;
   display: flex;
   justify-content: center;
