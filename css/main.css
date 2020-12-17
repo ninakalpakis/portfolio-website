@@ -90,6 +90,20 @@ textarea {
 @import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,400&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
 
+@font-face {
+  font-family: Salome-Regular;
+  src: url('../fonts/salome-.otf') format('opentype');
+}
+
+@font-face {
+  font-family: Viksi Script;
+  src: url('../fonts/viksi-script.otf') format('opentype');
+}
+@font-face {
+  font-family: SF Mono;
+  src: url('../fonts/sf-mono-regular.otf') format('opentype');
+}
+
 /* General Styles */
 
 html {
