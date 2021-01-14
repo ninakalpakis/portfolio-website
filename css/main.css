@@ -399,6 +399,7 @@ aside input[type=button] {
   color: #edddd4;
   border: none;
   text-align: center;
+  border-radius: 12px;
 }
 
 /* Portfolio */
@@ -469,7 +470,7 @@ aside input[type=button] {
 }
 
 #portfolio p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   color: #edddd4;
   font-size: 1em;
   display: flex;
@@ -478,6 +479,22 @@ aside input[type=button] {
   flex-flow: row wrap;
   text-align: left;
 }
+
+#portfolio a {
+  font-family: 'SF Mono';
+  color: #edddd4;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: left;
+}
+
+#portfolio a:hover {
+  color: coral;
+}
+
 
 /* Contact */
 
