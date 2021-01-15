@@ -282,21 +282,21 @@ header nav ul li {
 }
 
 #about h3 {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  color: gray;
-  font-size: 1.4em;
+  font-family: 'Salome';
+  font-size: 2em;
+  color: #197278;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0.5em;
 }
 
 #about p {
   color: #772e25;
   font-size: 1em;
-  line-height: 1.285em;
+  line-height: 1.5em;
   text-align: left;
 }
 
@@ -667,6 +667,11 @@ footer .design {
 @media only screen and (min-width: 768px) {
   /* Tablet Styles here */
 
+  /* Greeting */
+  .greeting .content-wrapper{
+    width: 80%;
+  }
+
   /* About */
 
   #about {
@@ -676,11 +681,12 @@ footer .design {
   }
 
   #about .content-wrapper {
-    width: 90%;
+    width: 80%;
   }
 
   #about img {
     border-radius: 50%;
+    width: 60%;
   }
 
   #about article {
@@ -711,6 +717,10 @@ footer .design {
 
   /* Skills */
 
+  #skills .content-wrapper{
+    width: 100%;
+  }
+
   #skills article {
     flex-basis: 33%;
   }
@@ -734,8 +744,17 @@ footer .design {
     border: none;
   }
 
+  #skills i {
+    font-size: 5.5em;
+    margin-bottom: 40px;
+  }
+
   /* Aside */
   
+  aside .content-wrapper{
+    width: 83%;
+  }
+
   aside h3 {
     font-size: 2.5em;
   }
@@ -771,12 +790,25 @@ footer .design {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
-  width: 75%;
+  width: 80%;
 }
 
 #portfolio h2 {
   font-family: 'Salome';
   font-size: 3em;
+}
+
+#portfolio img {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1em auto;
+  margin: 1em auto;
+  width: 100%;
+  border: 1em solid #edddd4;
+  padding: 0.25em;
 }
 
 }
@@ -792,6 +824,27 @@ footer .design {
       margin: 10px 0 20px 0;
     }
 
+    header nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row wrap;
+      width: 70%;
+      font-size: 1em;
+      font-weight: 700;
+      text-transform: lowercase;
+      font-family: 'SF Mono';
+    }
+    
+    header nav ul li {
+      font-size: 1.5em;
+    }
+
+    /* Greeting */
+
+    .greeting .content-wrapper {
+      width: 60%;
+    }
 
     /* About */
 
@@ -799,6 +852,10 @@ footer .design {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
+    }
+
+    #about .content-wrapper {
+      width: 70%;
     }
   
     #about article {
@@ -829,13 +886,31 @@ footer .design {
       font-size: 1.25em;
     }
 
+    #about img {
+      width: 40%;
+    }
+
   /* Skills */
+  #skills .content-wrapper {
+    width: 70%;
+  }
+
   #skills h3 {
     width: 90%;
   }
 
   #skills article {
-    width: 25%;
+    flex-basis: 25%;
+  }
+
+  #skills i {
+    font-size: 9em;
+    margin-bottom: 40px;
+  }
+
+  /* Aside */
+  aside .content-wrapper{
+    width: 70%;
   }
 
   /* Portfolio */
@@ -846,7 +921,20 @@ footer .design {
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
-    width: 75%;
+    width: 70%;
+  }
+
+  #portfolio img {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em auto;
+    margin: 1em auto;
+    width: 70%;
+    border: 1em solid #edddd4;
+    padding: 0.25em;
   }
 
 }
