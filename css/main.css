@@ -424,6 +424,7 @@ aside p {
   color: #772e25;
   text-align: center;
   font-family: 'SF Mono';
+  padding-bottom: 1.5em;
 }
 
 aside input[type=button] {
