@@ -423,8 +423,7 @@ aside h3 {
 aside p {
   color: #772e25;
   text-align: center;
-  font-family: 'Playfair Display';
-  font-style: italic;
+  font-family: 'SF Mono';
 }
 
 aside input[type=button] {
