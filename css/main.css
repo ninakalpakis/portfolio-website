@@ -103,6 +103,10 @@ textarea {
   font-family: SF Mono;
   src: url('../fonts/sf-mono-regular.otf') format('opentype');
 }
+@font-face {
+  font-family: Be Strong;
+  src: url('../fonts/be-strong.otf') format('opentype');
+}
 
 /* General Styles */
 
@@ -229,8 +233,8 @@ header nav ul li {
 .greeting h1 {
   color: #edddd4;
   font-family: 'Viksi Script';
-  font-size: 5em;
-  font-weight: 900;
+  font-size: 3em;
+  font-weight: normal;
   animation: fade 5s alternate;
   -moz-animation: fade 5s alternate;
   -webkit-animation: fade 5s alternate;
@@ -325,7 +329,7 @@ header nav ul li {
 #skills {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   background-color: #c44536;
 }
 
