@@ -109,7 +109,7 @@ textarea {
 }
 
 @font-face {
-  font-family: "SF Pro";
+  font-family: SF Pro;
   font-weight: 400;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
