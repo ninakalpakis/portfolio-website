@@ -228,9 +228,9 @@ header nav ul li {
 
 .greeting h1 {
   color: #edddd4;
-  font-family: "Salome";
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  font-size: 5em;
+  font-size: 4.9em;
   margin: 0;
   animation: fade 3s alternate;
   -moz-animation: fade 3s alternate;
