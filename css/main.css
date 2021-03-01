@@ -229,7 +229,7 @@ header nav ul li {
 
 .greeting h1 {
   color: #edddd4;
-  font-family: 'Roboto';
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
   letter-spacing: 0.01em;
   font-size: 4.9em;
@@ -246,7 +246,7 @@ header nav ul li {
 }
 
 .greeting h3 {
-  font-family: 'Roboto';
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 3em;
   font-weight: bolder;
   margin-top: 1em;
@@ -373,7 +373,7 @@ header nav ul li {
   font-size: 1em;
   line-height: 1.5em;
   text-align: left;
-  font-family: 'Roboto';
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #about span {
@@ -411,7 +411,7 @@ header nav ul li {
 
 #skills h5 {
   color: #edddd4;
-  font-family: 'Roboto';
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -442,7 +442,7 @@ header nav ul li {
   text-align: center;
   margin: 0;
   font-size: 1em;
-  font-family: 'Roboto';
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #skills i {
@@ -597,7 +597,7 @@ aside input[type=button]:hover {
 }
 
 #portfolio h5 {
-  font-family: 'Roboto';
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #edddd4;
   font-size: 0.9em;
@@ -605,7 +605,7 @@ aside input[type=button]:hover {
 }
 
 #portfolio p {
-  font-family: 'Roboto';
+  font-family: Arial, Helvetica, sans-serif;
   color: #772e25;
   font-size: 1em;
   display: flex;
@@ -853,7 +853,7 @@ footer .design {
   font-size: 1.5em;
   line-height: 1.5em;
   text-align: left;
-  font-family: "Roboto";
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #about span {
@@ -875,7 +875,7 @@ footer .design {
   
   #skills h5 {
     color: #edddd4;
-    font-family: 'Roboto';
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 1.5em;
   }
@@ -935,7 +935,7 @@ footer .design {
 }
 
 #portfolio h5 {
-  font-family: "Roboto";
+  font-family: Arial, Helvetica, sans-serif;
   color: #edddd4;
   font-size: 2em;
   line-height: 1.5em;
