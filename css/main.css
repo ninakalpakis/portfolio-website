@@ -219,47 +219,77 @@ header nav ul li {
   background-repeat: no-repeat;
   background-position: center;
   height: 80%;
-  text-align: center;
+  text-align: left;
 }
 
 .greeting .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   width: 84%;
 }
 
 .greeting h1 {
   color: #edddd4;
-  font-family: 'Viksi Script';
-  font-size: 5em;
+  font-family: 'SF Pro';
   font-weight: bolder;
-  animation: fade 5s alternate;
-  -moz-animation: fade 5s alternate;
-  -webkit-animation: fade 5s alternate;
-  -o-animation: fade 5s alternate;
+  font-size: 5em;
+  margin: 0;
+  animation: fade 3s alternate;
+  -moz-animation: fade 3s alternate;
+  -webkit-animation: fade 3s alternate;
+  -o-animation: fade 3s alternate;
 }
 
 @keyframes fade {
-  from {opacity: 0%; color: black;}
+  from {opacity: 0%; color: #0c3639;}
   to {opacity: 100%; color: #edddd4;}
 }
 
 .greeting h3 {
-  font-family: 'SF Mono';
-  font-style: italic;
-  font-size: 1.5em;
-  color: #edddd4;
+  font-family: 'SF Pro';
+  font-size: 3em;
+  font-weight: bolder;
+  margin-top: 1em;
+  color: #e8b1ab;
   display: inline-block;
   text-align: left;
+  /*
   animation-name: fade;
   animation-duration: 3s;
   animation-delay: 2s;
   animation-fill-mode: both;
   animation-timing-function: ease-out;
+  */
 }
 
+.greeting h4 {
+  font-family: "SF Mono";
+  font-size: 1.3em;
+  color: #e8b1ab;
+  text-align: left;
+}
+
+.greeting p {
+  font-family: "SF Mono";
+  font-size: 1em;
+  color: #edddd4;
+  text-align: left;
+}
+
+.greeting input[type=button] {
+  background: transparent;
+  color: #edddd4;
+  font-family: "SF Pro";
+  font-weight: bolder;
+  padding: 1em;
+  border-radius: 10px;
+  margin-top: 1em;
+  border: 3px solid #e8b1ab;
+}
+
+.greeting input[type=button]:hover {
+  transition: all 0.7s ease 0s;
+  background-color: #0c3639;
+  border-radius: 50px;
+}
 
 /* About */
 
@@ -272,37 +302,44 @@ header nav ul li {
 }
 
 #about .content-wrapper {
+  /*
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 80%;
+  */
+  width: 84%;
 }
 
 #about h2 {
   font-family: 'Salome';
-  font-size: 2.75em;
+  font-size: 2.3em;
+  font-weight: bolder;
   color: #197278;
+  text-align: left;
+  /*
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0.5em;
+  */
 }
 
 #about img {
+  /*
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 1em auto;
+  */
   display: block;
-  width: 80%;
+  width: 100%;
   border: 1em solid #c44536;
-  border-radius: 50%;
   padding: 0.5em;
+  margin-top: 3em;
 }
 
 #about h3 {
@@ -317,11 +354,31 @@ header nav ul li {
   margin: 0.5em;
 }
 
+#about .about-paragraph {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  /*
+  background-color: #f5ebe6;
+  border: 0.5em solid #197278;
+  padding: 1em;
+  border-radius: 30px;
+  width: 90%;
+  */
+}
+
 #about p {
-  color: #772e25;
+  color: #883025;
   font-size: 1em;
   line-height: 1.5em;
   text-align: left;
+  font-family: "SF Pro";
+}
+
+#about span {
+  font-family: 'Salome';
+  color: #c44536;
+  font-size: 1.8em;
+  text-align: center;
 }
 
 /* Skills */
@@ -329,21 +386,41 @@ header nav ul li {
 #skills {
   display: flex;
   justify-content: center;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   background-color: #c44536;
 }
 
+#skills .content-wrapper {
+  width: 84%;
+}
+
 #skills h3 {
-  margin: 40px;
   color: #edddd4;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 2.05em;
+  font-family: 'Salome';
+  font-size: 2em;
+  /*
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  */
   text-align: left;
+}
+
+#skills h5 {
+  color: #edddd4;
+  font-family: 'SF Pro';
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+#skills a {
+  color: #edddd4;
+  text-decoration: underline ;
+}
+
+#skills a:hover {
+  font-style: italic;
 }
 
 #skills article {
@@ -362,10 +439,12 @@ header nav ul li {
 #skills p {
   text-align: center;
   margin: 0;
+  font-size: 1em;
+  font-family: "SF Pro";
 }
 
 #skills i {
-  font-size: 5em;
+  font-size: 4em;
   margin-bottom: 40px;
 }
 
@@ -416,7 +495,7 @@ aside .content-wrapper {
 }
 
 aside h3 {
-  font-size: 1.7em;
+  font-size: 2em;
   margin-bottom: 1em;
   text-align: center;
   color: #772e25;
@@ -468,7 +547,7 @@ aside input[type=button]:hover {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
+  margin: 1em;
   width: 84%;
 }
 
@@ -477,11 +556,14 @@ aside input[type=button]:hover {
   font-size: 2.75em;
   color: #edddd4;
   margin-top: 1.5em;
-  text-align: center;
+  text-align: left;
 }
 
 #portfolio .portfolio-content {
   margin: 20px 0;
+  padding: 1em;
+  background-color: #edddd4;
+  border-radius: 20px;
 }
 
 #portfolio img {
@@ -492,8 +574,9 @@ aside input[type=button]:hover {
   text-align: center;
   margin: 1em auto;
   width: 100%;
-  border: 1em solid #edddd4;
-  padding: 0.25em;
+  border: 0.7em solid #c44536;
+  padding: 0.5em;
+  border-radius: 20px;
 }
 
 #portfolio img:hover {
@@ -501,43 +584,44 @@ aside input[type=button]:hover {
 }
 
 #portfolio h3 {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 1.75em;
-  color: #edddd4;
+  font-family: "Salome";
+  font-size: 1.5em;
+  color: #c44536;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 1em;
+  margin-top: 1em;
 }
 
 #portfolio h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "SF Pro";
+  font-weight: bold;
   color: #edddd4;
-  font-weight: 900;
-  font-size: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  text-align: left;
+  font-size: 0.9em;
+  line-height: 1.5em;
 }
 
 #portfolio p {
-  font-family: 'Montserrat';
-  color: #edddd4;
+  font-family: 'SF Pro';
+  color: #772e25;
   font-size: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   text-align: left;
+  line-height: 1.5em;
+}
+
+#portfolio p span {
+  color: #c44536;
+  font-size: smaller;
 }
 
 #portfolio a {
   font-family: 'SF Mono';
-  color: #edddd4;
+  color: #c44536;
   font-size: 1em;
   display: flex;
   justify-content: center;
@@ -724,84 +808,79 @@ footer .design {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (min-width: 500px) {
+#about img {
+  width: 70%;
+}
+
+#portfolio h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+
+}
+
+
 @media only screen and (min-width: 768px) {
   /* Tablet Styles here */
 
   /* Greeting */
   .greeting .content-wrapper{
-    width: 90%;
+    width: 75%;
   }
 
   /* About */
 
-  #about {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-  }
-
   #about .content-wrapper {
-    width: 70%;
+    width: 75%;
   }
 
   #about img {
-    border-radius: 50%;
-    width: 60%;
+    width: 55%;
   }
 
-  #about article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
-  #about h2 {
-    width: 85%;
-  }
+#about h2 {
+  font-size: 4em;
+}
 
-  #about article figure {
-    width: 49%;
-  }
+#about p {
+  color: #883025;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: left;
+  font-family: "SF Pro";
+}
 
-  #about article div {
-    width: 49%;
-    margin-right: 1em;
-  }
-
-  #about h3 {
-    width: 100%;
-    margin: 0;
-    font-size: 1.3em;
-    text-align: left;
-  }
+#about span {
+  font-family: 'Salome';
+  color: #c44536;
+  font-size: 1.8em;
+  text-align: center;
+}
 
   /* Skills */
 
   #skills .content-wrapper{
-    width: 100%;
+    width: 75%;
+  }
+
+  #skills h3 {
+    font-size: 4em;
+  }
+  
+  #skills h5 {
+    color: #edddd4;
+    font-family: 'SF Pro';
+    font-size: 1.5em;
+    line-height: 1.5em;
   }
 
   #skills article {
     flex-basis: 33%;
-  }
-
-  #skills input[type=button] {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 1em auto;
-    display: block;
-    width: 50%;
-    padding: 20px 0;
-    margin-top: 20px;
-    background-color: #edddd4;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 1.5em;
-    color: #c44536;
-    border: none;
+    margin-top: 5em;
   }
 
   #skills i {
@@ -845,17 +924,36 @@ footer .design {
 /* Portfolio */
 
 #portfolio .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin: 0;
-  width: 80%;
+  width: 75%;
 }
 
 #portfolio h2 {
   font-family: 'Salome';
+  font-size: 4em;
+}
+
+#portfolio h5 {
+  font-family: "SF Pro";
+  color: #edddd4;
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+#portfolio .portfolio-content {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+#portfolio h3 {
+  font-family: "Salome";
   font-size: 3em;
+  color: #c44536;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-top: 1em;
 }
 
 #portfolio img {
@@ -866,9 +964,13 @@ footer .design {
   text-align: center;
   margin: 1em auto;
   margin: 1em auto;
-  width: 100%;
-  border: 1em solid #edddd4;
-  padding: 0.25em;
+  width: 90%;
+  padding: 1em;
+}
+
+#portfolio p {
+  margin: 2em;
+  font-size: 1.5em;
 }
 
 }
@@ -903,7 +1005,7 @@ footer .design {
     /* Greeting */
 
     .greeting .content-wrapper {
-      width: 60%;
+      width: 70%;
     }
 
     /* About */
@@ -917,22 +1019,23 @@ footer .design {
     #about .content-wrapper {
       width: 70%;
     }
+
+    #about .about-paragraph {
+      width: 100%;
+    }
   
     #about article {
       display: flex;
       justify-content: space-between;
     }
   
-    #about h2 {
-      width: 85%;
-    }
-  
-    #about article figure {
-      width: 50%;
-    }
   
     #about article div {
       width: 60%;
+    }
+
+    #about h2 {
+      font-size: 2em;
     }
   
     #about h3 {
@@ -943,12 +1046,13 @@ footer .design {
     }
 
     #about p {
-      font-size: 1.25em;
+      font-size: 1.2em;
     }
 
     #about img {
       width: 40%;
     }
+
 
   /* Skills */
   #skills .content-wrapper {
